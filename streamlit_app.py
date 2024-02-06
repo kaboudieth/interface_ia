@@ -35,6 +35,9 @@ def main() -> None:
     if model == "Regression linéaire":
         param = st.slider("Choisir le paramètre", 0, 10)
 
+    elif model == "KNN":
+        param = st.slider("Nombre de voisins",1, 20,5)
+
     st.header("Visualiser les résultats")
 
 
